@@ -1,0 +1,105 @@
+body, html{
+    height: 100%;
+    margin: 0px;
+}
+
+nav{
+    display: inline-flex; 
+    background-color: black; 
+    flex-direction: row; 
+    width: 100%; 
+    max-height: 80px; 
+}
+
+nav{
+    display:inline-flex;
+    color: black;
+    width: 100%;
+    max-height: 80px; 
+   
+}
+
+nav ul{
+    background-color: black;
+    margin: 0px;
+    list-style-type: none;
+    width: 100%;
+    padding: 5px;
+    display: inline-flex; 
+    justify-content: space-around; 
+    padding-left: 250px;
+    padding-right:20px; 
+}
+
+nav li{
+    display: inline-flex;
+    margin: 5px;
+    color: white; 
+    justify-content: right; 
+    align-items: right; 
+    font-size: 12px; 
+}
+
+
+
+.home> h1{
+    display: inline-flex; 
+    font-family:'Franklin Gothic Medium';
+    font-size: 22px; 
+    color: white; 
+    width: 40vh; 
+    margin-left: 50px; 
+    margin-top: 7px; 
+    
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;  
+    /* display:inline-flex;
+    justify-content:flex-end; */
+}
+
+.hero-image{
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,.4)), url("/homework/images/vertical-shot-carting-cars-parked-racing-track-205127078.jpeg");
+    height: 2700px;
+    width: 100%; 
+    background-repeat:none; 
+    background-size: cover; 
+    background-position: center; 
+    /* position: relative;  */
+    
+}
+
+.hero-text{
+    color: lightgray; 
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 110px; 
+    width: 100%; 
+    height: 100%; 
+    text-align: center; 
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto; 
+    top: 25%; 
+}
+
+#driverDataForm{
+    position: relative;
+    margin-top: 190px; 
+    margin-bottom: 40px; 
+}
+
+.table{
+    margin-right: auto;
+    margin-left: auto; 
+    margin-top: 20px; 
+    color: white; 
+    
+}
+
+#driver-table{
+    margin-left: auto;
+    margin-right: auto; 
+}

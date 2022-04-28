@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="/homework/css/main.css">
+<!-- Add Script tags here -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/main.js" defer></script>
+<title>Racer Standings API</title>
+</head>
+<body>
+      <!-- Nav Bar Start -->
+      <nav class="home">
+        <h1>Racer Standings API</h1>
+        <ul class="home_links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#">Sign Up Free!</a></li    >
+         </ul>    
+    </nav>
+
+    <!-- Nav Bar End -->
+
+    <!-- Header Start -->
+    <div class="hero-image">
+        <div class="hero-text">
+            <h2 class="text-center">Let's Check Out Our Racers!</h2>
+        </div>
+            <!-- Racer Data HTML Elements -->
+        <div class="container text-center">
+            <div class="row">
+                <form name="driverData" id="driverDataForm">        
+                    <!-- <label for="season">Season</label>         -->
+                    <input type="text" name='season' id="season" placeholder="Place Season Here">        
+                    <!-- <label for="round">Round</label>        -->
+                    <input type="text" name='round' id="round" placeholder="Place Round Here">  
+                    <button class="btn btn-secondary" type="submit" id="submitButton" onClick="loadData()">Get Standings!</button>       
+                </form>
+                <div class="col-12 col-md-9 text-center" id="driver-table">
+                    <!--Section for Racer Content  -->
+                    <section class="list-group text-center drivers-list">
+                        <!-- API Content Here -->
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header End -->
+   
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
